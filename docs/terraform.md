@@ -9,6 +9,7 @@
 | container_name | The name of the container in task definition to associate with the load balancer | string | - | yes |
 | container_port | The port on the container to associate with the load balancer | string | `80` | no |
 | delimiter | Delimiter to be used between `name`, `namespace`, `stage`, etc. | string | `-` | no |
+| deployment_type | Whether to use the standard ECS or CODE_DEPLOY for (blue/green) | string | `ECS` | no |
 | deployment_maximum_percent | The upper limit of the number of tasks (as a percentage of `desired_count`) that can be running in a service during a deployment | string | `200` | no |
 | deployment_minimum_healthy_percent | The lower limit (as a percentage of `desired_count`) of the number of tasks that must remain running and healthy in a service during a deployment | string | `100` | no |
 | desired_count | The number of instances of the task definition to place and keep running | string | `1` | no |
